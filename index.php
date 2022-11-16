@@ -1,5 +1,6 @@
 <?php
 	include('script.php');
+  if(isset($_SESSION['id'])){
 	?>
 <!DOCTYPE html>
 <html lang="en">
@@ -31,8 +32,18 @@
           </li>
           <li class="nav-item pe-">
             
-           
-              <a class="nav-link " href="#">name user</a>
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <?php echo $_SESSION['firstname']; ?>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item"  href="logout.php">logout</a></li>
+            <!-- <li><a class="dropdown-item" href="#"></a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#"></a></li> -->
+          </ul>
+        </li>
+              <!-- <a class="nav-link " href="#"><?php echo $_SESSION['firstname']; ?></a> -->
           </li>
           <div class="modal-header">
             <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%281%29.webp"  alt="avatar" style="width: 40px; ;" class="rounded-circle img-responsive ">
@@ -42,6 +53,8 @@
       </div>
     </div>
   </nav>
+  <h3 class="alert alert- text-center text-primary m-0" role="alert"><span class="text-dark">Hello,</span><?php echo $_SESSION['firstname']; ?></h3>
+  <!-- <button type="button" class="btn btn-outline-dark" ><a href="logout.php">logout</a></button> -->
   <section style=" background-image:linear-gradient(to right, rgb(255, 158, 182), rgb(238, 156, 255));" class=" text-dark text-center w-50-sm pt-4  ">
      <div class="container ">
 
@@ -350,3 +363,8 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
+<?php
+    
+  }else{
+    header("location:login.php ");  
+  }

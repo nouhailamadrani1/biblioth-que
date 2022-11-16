@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  
     <section class=" text-dark text-center text-sm-start  my-5 ">
         <div class="container  ">
     
@@ -19,16 +21,20 @@
     <div class="">
       <div class=" bg-light p-5 shadow p-3 mb-5 bg-body rounded"> 
     <h2>Login </h2>
-    <form >
-       
+    <form action="c-login.php" method="post">
+       <?php if(isset($_GET['error'])){ ?>
+        <p class="alert alert-danger" role="alert">
+          <?php echo $_GET['error'];?></p>
+       <?php } ?>
+      
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="email" >
+          <input type="email" class="form-control" name="email" id="email" placeholder="E-mail">
             <p class="text-danger" id="demo"></p>
         </div>
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="password" class="form-control" id="password">
+          <input type="password" class="form-control" name="password" id="password" placeholder="Password">
             
         </div>
         <div class="mb-3 form-check">
@@ -37,7 +43,7 @@
          
           </div>
         </div>
-        <button type="submit" class="btn btn-primary " onclick="validation(event)">Login</button>
+        <button type="submit" class="btn btn-primary " >Login</button>
         <button type="submit" class="btn btn-info">sgin up</button>
         
       </form>
