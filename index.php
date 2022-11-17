@@ -286,7 +286,7 @@
         <div class="modal-header">
             
             <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%281%29.webp"  alt="avatar" style="width: 60px; " class="rounded-circle img-responsive ">
-            <a class="nav-link  text-white" href="#">name user</a>
+            <a class="nav-link  text-white" href="#"><?php echo $_SESSION['firstname']; ?></a>
           </div>
          
                 <div class="">
@@ -323,7 +323,7 @@
             <!--select  -->
             <div class="mb-3">
               <label for="title" class="form-label">Publisher</label>
-              <input type="title"  class="form-control"   name="Publisher" >
+              <input type="title"  class="form-control"  value="<?php echo $_SESSION['firstname']; ?>" name="Publisher" >
               </div>
            <!-- select2 -->
            <div class="mb-3">

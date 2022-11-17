@@ -18,33 +18,37 @@
             </div>
     <div class="">
       <div class=" bg-light p-5 shadow p-3 mb-5 bg-body rounded"> 
-    <h2>Sign Up </h2>
-    <form >
+    <h2>Sign Up </h2>      
+     <?php if(isset($_GET['error'])){ ?>
+        <p class="alert alert-danger" role="alert">
+          <?php echo $_GET['error'];?></p>
+      <?php } ?>
+    <form action="c-signup.php" method="post">
         <div class="mb-3">
           <label class="form-label">first name</label>
-          <input type="first_name" class="form-control" id="name" >
+          <input type="first_name" class="form-control" name="first_name" id="name" >
           <p class="text-danger" id="demo1"></p>
         </div>
         <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label" >last name</label>
-          <input type="last_name" class="form-control" id="name2">
+          <label for="exampleInputPassword1" class="form-label">last name</label>
+          <input type="last_name" class="form-control" name="last_name" id="name2">
           <p class="text-danger" id="demo2"></p>
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="email" >
+            <input type="email" class="form-control" name="email" id="email" >
             <p class="text-danger" id="demo"></p>
             <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
           </div>
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="password">
-            <p class="text-danger" id="passwordError"></p>
+            <input type="password" class="form-control" name=password id="password">
+            <p class="text-danger" id="passwordError" ></p>
           </div>
           <div class="mb-3 form-check">
-        
-        <button type="submit" class="btn btn-info"  onclick="myFunction(event)" >Sign up</button>
-        <button type="submit" class="btn btn-primary" location="/login.php">Login</button>
+        <!-- onclick="myFunction(event) -->
+        <button type="submit" class="btn btn-info"  >Sign up</button>
+        <!-- <a href="login.php">Login</a> -->
       </form>
     </div>
     </div>
