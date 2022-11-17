@@ -76,190 +76,22 @@
    
     <div class="container text-center ">
         <h4 class="pt-4"><b>Book List</b></h4>
-        <!-- <div class="d-flex  justify-content-evenly flex-wrap">
-<div>
-          <div class="p-4    shadow p-3 mb-5 bg-body rounded">
-            <h4>General Culture Books</h4>
-            <div class="card" style="width: 18rem;">
-               
-                <img   style="width: 70px;" src="/img/0140280197.01._SCLZZZZZZZ_SX500_.jpg" class="card-img-top align-self-center py-3" alt="..."> 
-                <div class="card-body">
-                  <h5 class="card-title">The 48 Laws of Power by Robert Greene</h5>
-                  <p class="card-text">The 48 Laws of Power (1998) is a non-fiction book by American author Robert Greene. ... The book is a New York Times bestseller, selling over 1.2 million copies ...
-                </p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">id:1</li>
-                  <li class="list-group-item">Pages: 480
-                
-                </ul>
-                <div class="card-body">
-                  <a href="#" class="card-link"> <img  class=" img-fluid " style="width: 70px;" src="img/deletbook.png"  alt="">Delete </a>
-                  <a href="#" class="card-link"><img  class=" img-fluid " style="width: 70px;" src="img/editbook.png"  alt=""> Edit</a>
-                  
-                </div>
-              </div>
-          </div>
-          
-          
-</div>
-<div>
-    <div  class="p-4  bg-light  p-2 shadow p-3 mb-5 bg-body rounded">
-      <h4>Programming Books</h4>
-      <div class="card" style="width: 18rem;">
-         
-          <img   style="width: 70px;" src="img/41HXiIojloL.jpg" class="card-img-top align-self-center py-3" alt="..."> 
-          <div class="card-body">
-            <h5 class="card-title">The Pragmatic Programmer</h5>
-            <p class="card-text">Written as a series of self-contained sections and filled with entertaining anecdotes, thoughtful examples, and interesting analogies, The Pragmatic Programmer ...
-
-          </p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">id:2</li>
-            <li class="list-group-item">Pages: 370
-        
-          </ul>
-          <div class="card-body">
-            <a href="#" class="card-link"> <img  class=" img-fluid " style="width: 70px;" src="img/deletbook.png"  alt="">Delete </a>
-            <a href="#" class="card-link"><img  class=" img-fluid " style="width: 70px;" src="img/editbook.png"  alt=""> Edit</a>
-            
-          </div>
-        </div>
-    </div>
-    
-    
-</div>
-<div>
-    <div class="p-4  bg-light  p-2 shadow p-3 mb-5 bg-body rounded" >
-      <h4>Self Development Books</h4>
-      <div class="card" style="width: 18rem;">
-         
-          <img   style="width: 70px; " src="img/self-help-books-3.jpg" class="card-img-top align-self-center py-3" alt="..."> 
-          <div class="card-body">
-            <h5 class="card-title">Thinking Fast And Slow by Daniel Kahneman</h5>
-            <p class="card-text">“Nothing in life is as important as you think it is, while you are thinking about it” — Daniel Kahneman
-          </p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">id:3</li>
-            <li class="list-group-item">Pages: 545
-         
-          </ul>
-          <div class="card-body">
-            <a href="#" class="card-link"> <img  class=" img-fluid " style="width: 70px; " src="img/deletbook.png"  alt="">Delete </a>
-            <a href="#" class="card-link"><img  class=" img-fluid " style="width: 70px;" src="img/editbook.png"  alt=""> Edit</a>
-            
-          </div>
-        </div>
-    </div>
-    
-    
-</div> -->
-
-        </div>
-      </div>
-  </section>
-  <section>
-    <div class="container">
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="p-4    shadow p-3 mb-5 bg-body rounded">
-              
-              <div class="card" style="width: 100;">
-
-                 
-              <!-- IN PROGRESS TASKS HERE -->
-								<?php
-								//PHP CODE HERE
-								
-								
-								//DATA FROM getTasks() FUNCTION
-								getTasks();
+        <div  class="d-flex flex-wrap ">
+         <div  class="cadre w-100">
+         <?php
+								getBook();
 								?>
-                  <!-- <img   style="width: 70px;" src="img/0140280197.01._SCLZZZZZZZ_SX500_.jpg" class="card-img-top align-self-center py-3 " alt="..."> 
-                  <div class="card-body">
-                    <h5 class="card-title"> Titre : The 48 Laws of Power by Robert Greene</h5>
-                    <p class="card-text">The 48 Laws of Power (1998) is a non-fiction book by American author Robert Greene. ... The book is a New York Times bestseller, selling over 1.2 million copies ...
-                  </p>
-                  </div>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">id : 1</li>
-                    <li class="list-group-item">Publisher
-                  
-                  </ul>
-                  <div class="card-body">
-                    <a href="#" class="card-link"> <img  class=" img-fluid " style="width: 70px;" src="img/deletbook.png"  alt="">Delete </a>
-                    <a href="#" class="card-link"><img  class=" img-fluid " style="width: 70px;" src="img/editbook.png"  alt=""> Edit</a>
-                    
-                  </div> -->
-                </div>
-            </div>
-            
-          </div>
-          <div class="carousel-item">
-            <div  class="p-4  bg-light  p-2 shadow p-3 mb-5 bg-body rounded">
-              
-              <div class="card" style="width: 100;">
-                 
-                  <!-- <img   style="width: 70px;" src="img/41HXiIojloL.jpg" class="card-img-top align-self-center py-3" alt="..."> 
-                  <div class="card-body">
-                    <h5 class="card-title"> Titre : The Pragmatic Programmer</h5>
-                    <p class="card-text">Written as a series of self-contained sections and filled with entertaining anecdotes, thoughtful examples, and interesting analogies, The Pragmatic Programmer ...
-        
-                  </p>
-                  </div>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">id : 2</li>
-                    <li class="list-group-item">Publisher :  </li>
-                
-                  </ul>
-                  <div class="card-body">
-                    <a href="#" class="card-link"> <img  class=" img-fluid " style="width: 70px;" src="img/deletbook.png"  alt="">Delete </a>
-                    <a href="#" class="card-link"><img  class=" img-fluid " style="width: 70px;" src="img/editbook.png"  alt=""> Edit</a>
-                     
-                  </div> 
-                </div>
-            </div>
-            
-          </div>
-          <div class="carousel-item">
-            <div class="p-4  bg-light  p-2 shadow p-3 mb-5 bg-body rounded" >
-             
-              <div class="card" style="width:100;"> 
-                 
-                  <img   style="width: 70px; " src="img/self-help-books-3.jpg" class="card-img-top align-self-center py-3" alt="..."> 
-                  <div class="card-body">
-                    <h5 class="card-title"> Titre : Thinking Fast And Slow by Daniel Kahneman</h5>
-                    <p class="card-text">“Nothing in life is as important as you think it is, while you are thinking about it” — Daniel Kahneman
-                  </p>
-                  </div>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">id : 3</li>
-                    <li class="list-group-item">Publisher :</li>
-                 
-                  </ul>
-                  <div class="card-body d-flex ">
-                    <a href="#" class="card-link"> <img  class=" img-fluid " style="width: 75px; " src="img/deletbook.png"  alt="">Delete </a>
-                    <a href="#" class="card-link"><img  class=" img-fluid " style="width: 70px;" src="img/editbook.png"  alt=""> Edit</a>
-                    
-                  </div> -->
-                </div>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-
+         </div>
+         
+      
+     
+     
     </div>
+  </div>
+        
+  </div>
+          
+       
   </section>
   <section class=" text-dark text-center text-sm-start pt-4 py-5  " style=" background-image:linear-gradient(to right, rgb(255, 158, 182), rgb(238, 156, 255));">
     <div class="container ">
@@ -313,24 +145,21 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form  id="task" name="task"  action="script.php" method="POST" >
+        <form  id="task" name="task"   enctype="multipart/form-data" action="script.php" method="POST" >
         <div class="mb-3">
           <label for="title" class="form-label">Title</label>
           <input type="title"  class="form-control"   name="title" id="title-addTaskk">
           </div>
           <!--radios  -->
           
-            <!--select  -->
-            <div class="mb-3">
-              <label for="title" class="form-label">Publisher</label>
-              <input type="title"  class="form-control"  value="<?php echo $_SESSION['firstname']; ?>" name="Publisher" >
-              </div>
+           
            <!-- select2 -->
-           <div class="mb-3">
-           <label for="file-upload" class="custom-file-upload">
+           <div  class="form-control mb-3">
+           <label for="title" class="form-label">IMG</label>
+           <label for="file-upload"  class="custom-file-upload ">
             
         </label>
-        <input id="file-upload" type="file"/>
+        <input id="file-upload" name="img" type="file">
         </div>
            <div class="mb-3">
             <label for="title" class="form-label">quantity</label>
@@ -358,6 +187,7 @@
           </div>
   
             </div></div>
+          
 
      <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>

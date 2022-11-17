@@ -47,8 +47,8 @@
           </div>
           <div class="mb-3 form-check">
         <!-- onclick="myFunction(event) -->
-        <button type="submit" class="btn btn-info"  >Sign up</button>
-        <!-- <a href="login.php">Login</a> -->
+        <button type="submit" class="btn btn-info"   onclick="myFunction(event)" >Sign up</button>
+        <a href="login.php">Login</a>
       </form>
     </div>
     </div>
