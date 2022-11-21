@@ -3,6 +3,7 @@
     padding: 0;
    
 }
-body{
-    background-image: url("noha.png");
-}
+/* body{
+    background : url("./img/noha.png") no-repeat;
+    background-size: cover;
+} */
