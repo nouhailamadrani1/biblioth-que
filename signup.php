@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,11 +9,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/guillaumepotier/Parsley.js@2.9.2/doc/assets/docs.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/guillaumepotier/Parsley.js@2.9.2/src/parsley.css" />
 </head>
-
 <body>
   <section class=" text-dark text-center text-sm-start  my-5   ">
     <div class="container ">
-
       <div class="d-flex align-items-center justify-content-evenly  ">
         <div class="">
           <img class="d-none d-sm-block img-fluid w-55 " src="img/booybook.png" alt="">
@@ -41,7 +38,6 @@
                 <label for="exampleInputEmail1" class="form-label">Email address</label>
                 <input type="email" class="form-control" name="email"  required  id="email">
                 <p class="text-danger" id="demo"></p>
-                <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
               </div>
               <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Password</label>
@@ -49,17 +45,14 @@
                 <p class="text-danger" id="passwordError"></p>
               </div>
               <div class="mb-3 form-check">
-                <!-- onclick="myFunction(event) -->
                 <button type="submit" class="btn btn-info">Sign up</button>
                 <a href="login.php">Login</a>
             </form>
           </div>
         </div>
-
       </div>
     </div>
   </section>
-
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
   <script src="script.js"></script>
@@ -67,5 +60,4 @@
     <!-- END jquery js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js" integrity="sha512-eyHL1atYNycXNXZMDndxrDhNAegH2BDWt1TmkXJPoGf1WLlNYt08CSjkqF5lnCRmdm3IrkHid8s2jOUY4NIZVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
-
 </html>

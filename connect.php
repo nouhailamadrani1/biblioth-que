@@ -9,6 +9,6 @@ $conn = new mysqli($servername, $username, $password, $database);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
-$sql = "SELECT book.id,book.title,book.img,book.quantity,book.Publisher 
-  FROM book JOIN admine on admine.id=book.Publisher";
+$sql = "SELECT book.id,book.title,book.img,book.quantity,book.Publisher,admine.firstname,admine.lastname
+FROM book JOIN admine on admine.id=book.Publisher";
 $result = mysqli_query($conn, $sql);
